@@ -53,7 +53,6 @@ export function SpotifyNowPlaying() {
   const [elapsed, setElapsed] = useState(0)
   const [currentTime, setCurrentTime] = useState(formatCurrentTime())
   const [isLoading, setIsLoading] = useState(true)
-  const [error, setError] = useState<string | null>(null)
   const tickRef = useRef<ReturnType<typeof setInterval> | null>(null)
   const timeRef = useRef<ReturnType<typeof setInterval> | null>(null)
   const pollRef = useRef<ReturnType<typeof setInterval> | null>(null)
@@ -93,7 +92,6 @@ export function SpotifyNowPlaying() {
             url: `https://open.spotify.com/track/${s.track_id}`,
             timestamps: s.timestamps ?? null,
           })
-          setError(null)
         } else {
           setSpotify(null)
         }
@@ -105,7 +103,6 @@ export function SpotifyNowPlaying() {
       if (err instanceof Error && err.name === 'AbortError') {
         return
       }
-      setError('Failed to load')
       setIsLoading(false)
     }
   }
@@ -171,10 +168,6 @@ export function SpotifyNowPlaying() {
         </div>
       </div>
     )
-  }
-
-  if (error) {
-    return null
   }
 
   if (!spotify) {
