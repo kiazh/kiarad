@@ -3,25 +3,16 @@ export function About() {
     <section id="about" style={{ paddingTop: '44px', paddingBottom: '56px' }}>
       <SectionLabel>About</SectionLabel>
       <div style={{ lineHeight: 1.85 }}>
-        <p style={{ color: 'var(--fg)', marginBottom: '0px' }}>
-          I'm a second-year Mathematical Physics student at the University of Waterloo.
+        <p style={{ color: 'var(--fg)', margin: 0 }}>
+          Hi, I'm Kiarad, a second-year Math-Phys major at the University of Waterloo.
+          I am currently a machine learning research assistant at UofT.
         </p>
-        <p style={{ color: 'var(--fg)', marginBottom: '0px', marginTop: '16px' }}>
-          Most of my interests revolve around understanding systems at a fundamental level — whether that's physics, embedded systems, philosophy, or machine learning.
+        <p style={{ color: 'var(--fg)', margin: 0, marginTop: '16px' }}>
+          Most of my interests revolve around understanding systems at a fundamental level,
+          whether that's physics, embedded systems, philosophy, or machine learning.
         </p>
-        <p style={{ color: 'var(--fg)', marginBottom: '0px', marginTop: '16px' }}>
-          If this sounds interesting to you, feel free to contact me{' '}
-          <a
-            href="mailto:kia.zheidari@gmail.com"
-            style={{
-              color: 'var(--fg)',
-              textDecoration: 'underline',
-              textUnderlineOffset: '4px',
-              textDecorationColor: 'var(--muted)',
-            }}
-          >
-            @kia.zheidari@gmail.com
-          </a>
+        <p style={{ color: 'var(--fg)', margin: 0, marginTop: '16px' }}>
+          If this sounds interesting to you, reach out to me :)
         </p>
       </div>
     </section>
