@@ -4,8 +4,24 @@ export function About() {
       <SectionLabel>About</SectionLabel>
       <div style={{ lineHeight: 1.85 }}>
         <p style={{ color: 'var(--fg)', marginBottom: '0px' }}>
-          I'm Kiarad Zafar Heidari, an 18-year-old Mathematical Physics student at the University of Waterloo. I don't separate physics from development.
-           I just want to know how things work, and that takes me everywhere: low-level systems, machine learning, general relativity, philosophy.
+          I'm a second-year Mathematical Physics student at the University of Waterloo.
+        </p>
+        <p style={{ color: 'var(--fg)', marginBottom: '0px', marginTop: '16px' }}>
+          Most of my interests revolve around understanding systems at a fundamental level — whether that's physics, embedded systems, philosophy, or machine learning.
+        </p>
+        <p style={{ color: 'var(--fg)', marginBottom: '0px', marginTop: '16px' }}>
+          If this sounds interesting to you, feel free to contact me{' '}
+          <a
+            href="mailto:kia.zheidari@gmail.com"
+            style={{
+              color: 'var(--fg)',
+              textDecoration: 'underline',
+              textUnderlineOffset: '4px',
+              textDecorationColor: 'var(--muted)',
+            }}
+          >
+            @kia.zheidari@gmail.com
+          </a>
         </p>
       </div>
     </section>
