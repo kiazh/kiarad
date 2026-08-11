@@ -42,3 +42,8 @@ next-env.d.ts
 
 # tool artifacts
 .impeccable/
+.kiro/
+
+# dev server logs
+dev-server.log
+dev-server-err.log

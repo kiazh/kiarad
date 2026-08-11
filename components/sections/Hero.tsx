@@ -44,7 +44,7 @@ export function Hero() {
           fontSize: '15px',
           maxWidth: '400px',
         }}>
-          Mathematical Physics, University of Waterloo.
+          Mathematical Physics, University of{'\u2007'}Waterloo.
           <br />
           Systems programming, machine learning, low-level development.
         </p>
